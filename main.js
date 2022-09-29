@@ -1,6 +1,6 @@
 alert("Este pequeño ejemplo ordenará los dígitos de un número de menor a mayor");
 
-var numero = prompt("Ingrese un número entero de 3 cifras o más. Por ejemplo: 467152...");
+const numero = prompt("Ingrese un número entero de 3 cifras o más. Por ejemplo: 467152...");
 
 function esNumero(numero) {
 
@@ -16,7 +16,7 @@ function esNumero(numero) {
 
 function esDeMasDeDosCifras(numero) {
 
-    if (numero.lenght >= 2){
+    if (numero.length > 2){
         return true;
     }
     else {
@@ -25,6 +25,7 @@ function esDeMasDeDosCifras(numero) {
     }
 
 };
+
 
 function comparador(a,b) {
 
@@ -49,5 +50,6 @@ function mostrarResultado(numero) {
   }
   
 };
+
 
 mostrarResultado(numero);
